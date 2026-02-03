@@ -38,6 +38,12 @@
             margin-bottom: 15px;
             font-weight: 600;
         }
+        h3 {
+            font-size: 1.1em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: #915c3d;
+        }
         p {
             margin-bottom: 15px;
             color: #555;
@@ -92,7 +98,7 @@
 <body>
     <div class="container">
         <h1>Terms of Service</h1>
-        <p class="last-updated">Last Updated: February 3, 2026</p>
+        <p class="last-updated">Last Updated: February 4, 2026</p>
 
         <p>Welcome to Relogue! These Terms of Service ("Terms") govern your use of the Relogue mobile application ("App") and related services provided by Relogue ("we," "our," or "us"). By downloading, accessing, or using our App, you agree to be bound by these Terms.</p>
 
@@ -102,6 +108,14 @@
 
         <h2>1. Description of Service</h2>
         <p>Relogue is a personalized affirmation app that uses artificial intelligence to create custom audio affirmations based on your preferences and intentions. The App helps users build positive habits through daily listening goals and streak tracking.</p>
+        <p>Key features include:</p>
+        <ul>
+            <li>AI-generated personalized affirmation scripts</li>
+            <li>Text-to-speech audio generation with multiple voice options</li>
+            <li>Daily goal setting and streak tracking</li>
+            <li>Listening time statistics</li>
+            <li>Background music options for playback</li>
+        </ul>
 
         <h2>2. Account Registration</h2>
         <p>To access certain features of the App, you may create an account using Apple Sign In. You agree to:</p>
@@ -111,6 +125,7 @@
             <li>Notify us immediately of any unauthorized access to your account</li>
             <li>Accept responsibility for all activities that occur under your account</li>
         </ul>
+        <p>You may also use the App as a guest with limited functionality. Guest users can create one affirmation before being prompted to sign in.</p>
 
         <h2>3. Subscription Plans and Pricing</h2>
         <p>Relogue offers both free and premium subscription tiers:</p>
@@ -124,7 +139,7 @@
             <tr>
                 <td>Affirmation Creation</td>
                 <td>1 affirmation (lifetime)</td>
-                <td>5 affirmations per day</td>
+                <td>Unlimited (subject to rate limits)</td>
             </tr>
             <tr>
                 <td>Listening & Playback</td>
@@ -143,20 +158,22 @@
             </tr>
         </table>
 
-        <h3 style="font-size: 1.1em; margin-top: 20px; margin-bottom: 10px; color: #915c3d;">Rate Limiting</h3>
-        <p>To ensure fair usage and maintain service quality, affirmation generation is subject to the following rate limits:</p>
+        <h3>Rate Limiting</h3>
+        <p>To ensure fair usage, maintain service quality, and manage infrastructure costs, affirmation generation is subject to rate limits:</p>
         <ul>
-            <li><strong>Free Users:</strong> Limited to 1 affirmation creation for the lifetime of the account. This affirmation can be played unlimited times.</li>
-            <li><strong>Premium Subscribers:</strong> Limited to 5 affirmation creations per 24-hour period. The limit resets daily at midnight (UTC).</li>
+            <li><strong>All Users:</strong> Limited to 10 affirmation creations per hour per device.</li>
+            <li><strong>Free Users:</strong> Limited to 1 affirmation creation for the lifetime of the account.</li>
+            <li><strong>Premium Subscribers:</strong> Unlimited affirmations, subject to the hourly rate limit.</li>
         </ul>
+        <p>Rate limits are enforced per device using an anonymous device identifier. Attempting to circumvent rate limits may result in account suspension.</p>
 
         <div class="highlight">
             <strong>Note:</strong> Rate limits apply to the creation of new affirmations only. Playing, replaying, and listening to existing affirmations is unlimited for all users.
         </div>
 
-        <h3 style="font-size: 1.1em; margin-top: 20px; margin-bottom: 10px; color: #915c3d;">Subscription Terms</h3>
+        <h3>Subscription Terms</h3>
         <ul>
-            <li>Premium subscriptions are billed monthly through the Apple App Store.</li>
+            <li>Premium subscriptions are billed through the Apple App Store.</li>
             <li>Subscriptions automatically renew unless cancelled at least 24 hours before the end of the current billing period.</li>
             <li>You can manage or cancel your subscription in your Apple ID account settings.</li>
             <li>No refunds will be provided for partial subscription periods.</li>
@@ -172,24 +189,58 @@
             <li>Share your account credentials with others</li>
             <li>Use the App to generate harmful, offensive, or inappropriate content</li>
             <li>Interfere with or disrupt the App's servers or networks</li>
+            <li>Attempt to access data belonging to other users</li>
+            <li>Use the App for any commercial purpose without authorization</li>
             <li>Violate any applicable laws or regulations</li>
         </ul>
 
         <h2>5. AI-Generated Content</h2>
-        <p>Relogue uses artificial intelligence to generate personalized affirmation content. You acknowledge and agree that:</p>
+        <p>Relogue uses artificial intelligence (Google Cloud Vertex AI) to generate personalized affirmation scripts, and text-to-speech technology (Google Cloud Text-to-Speech) to create audio. You acknowledge and agree that:</p>
         <ul>
             <li>AI-generated content is created algorithmically based on your inputs and preferences.</li>
             <li>We do not guarantee that AI-generated content will be error-free, accurate, or suitable for any particular purpose.</li>
             <li>AI-generated affirmations are intended for personal wellness and motivation purposes only.</li>
             <li>The App is not a substitute for professional mental health treatment, therapy, or medical advice.</li>
             <li>You use AI-generated content at your own discretion and risk.</li>
+            <li>Generated content may be stored on our servers for content moderation purposes as required by Apple's App Store guidelines.</li>
         </ul>
 
         <div class="warning">
             <strong>Disclaimer:</strong> Relogue is a wellness and personal development tool. It is NOT a medical device and should not be used as a substitute for professional mental health services. If you are experiencing mental health issues, please consult a qualified healthcare professional.
         </div>
 
-        <h2>6. Intellectual Property</h2>
+        <h2>6. Data Collection and Storage</h2>
+        <p>By using the App, you acknowledge and consent to the following data practices:</p>
+
+        <h3>Data Stored on Your Device</h3>
+        <ul>
+            <li>Affirmation audio files</li>
+            <li>Listening history and preferences</li>
+            <li>Streak and goal data</li>
+            <li>App settings</li>
+        </ul>
+
+        <h3>Data Stored on Our Servers</h3>
+        <ul>
+            <li>Anonymous device identifier</li>
+            <li>Affirmation generation logs (intention, preferences, generated scripts)</li>
+            <li>Usage statistics (listening time, streaks, last active date)</li>
+        </ul>
+
+        <p>This data is collected for service operation, content moderation, and analytics purposes. For complete details, please refer to our <a href="privacy-policy.html">Privacy Policy</a>.</p>
+
+        <h2>7. Third-Party Services</h2>
+        <p>The App relies on the following third-party services to function:</p>
+        <ul>
+            <li><strong>Google Cloud Vertex AI:</strong> For generating affirmation scripts</li>
+            <li><strong>Google Cloud Text-to-Speech:</strong> For generating audio from scripts</li>
+            <li><strong>Apple Sign In:</strong> For user authentication</li>
+            <li><strong>Apple App Store:</strong> For subscription management and payments</li>
+            <li><strong>Fly.io:</strong> For hosting backend services</li>
+        </ul>
+        <p>Your use of the App is also subject to the terms and privacy policies of these third-party providers.</p>
+
+        <h2>8. Intellectual Property</h2>
         <p>All content, features, and functionality of the App, including but not limited to text, graphics, logos, icons, audio, and software, are owned by Relogue and are protected by copyright, trademark, and other intellectual property laws.</p>
         <ul>
             <li>You are granted a limited, non-exclusive, non-transferable license to use the App for personal, non-commercial purposes.</li>
@@ -197,10 +248,10 @@
             <li>You may not redistribute, sell, or commercially exploit any content from the App.</li>
         </ul>
 
-        <h2>7. Privacy</h2>
+        <h2>9. Privacy</h2>
         <p>Your privacy is important to us. Our collection and use of personal information is governed by our <a href="privacy-policy.html">Privacy Policy</a>, which is incorporated into these Terms by reference. By using the App, you consent to our data practices as described in the Privacy Policy.</p>
 
-        <h2>8. Termination</h2>
+        <h2>10. Termination</h2>
         <p>We reserve the right to suspend or terminate your access to the App at any time, with or without cause, and with or without notice. Reasons for termination may include:</p>
         <ul>
             <li>Violation of these Terms of Service</li>
@@ -208,24 +259,25 @@
             <li>Abuse of rate limits or system resources</li>
             <li>At our sole discretion for any reason</li>
         </ul>
-        <p>Upon termination, your right to use the App will immediately cease. Provisions of these Terms that by their nature should survive termination shall survive.</p>
+        <p>Upon termination, your right to use the App will immediately cease. You may request deletion of your server-stored data by contacting support@relogue.app.</p>
 
-        <h2>9. Disclaimers</h2>
+        <h2>11. Disclaimers</h2>
         <p>THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED. TO THE FULLEST EXTENT PERMITTED BY LAW, WE DISCLAIM ALL WARRANTIES, INCLUDING BUT NOT LIMITED TO:</p>
         <ul>
             <li>Implied warranties of merchantability and fitness for a particular purpose</li>
             <li>Warranties that the App will be uninterrupted, error-free, or secure</li>
             <li>Warranties regarding the accuracy or reliability of AI-generated content</li>
+            <li>Warranties regarding the availability of third-party services</li>
         </ul>
 
-        <h2>10. Limitation of Liability</h2>
+        <h2>12. Limitation of Liability</h2>
         <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, RELOGUE SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS, DATA, OR GOODWILL, ARISING OUT OF OR RELATED TO YOUR USE OF THE APP.</p>
         <p>Our total liability for any claims arising from these Terms or your use of the App shall not exceed the amount you paid to us in the twelve (12) months preceding the claim.</p>
 
-        <h2>11. Indemnification</h2>
+        <h2>13. Indemnification</h2>
         <p>You agree to indemnify, defend, and hold harmless Relogue and its officers, directors, employees, and agents from any claims, damages, losses, or expenses (including reasonable attorney's fees) arising out of or related to your use of the App or violation of these Terms.</p>
 
-        <h2>12. Changes to Terms</h2>
+        <h2>14. Changes to Terms</h2>
         <p>We may modify these Terms at any time. We will notify you of material changes by:</p>
         <ul>
             <li>Updating the "Last Updated" date at the top of this page</li>
@@ -234,13 +286,16 @@
         </ul>
         <p>Your continued use of the App after changes become effective constitutes acceptance of the modified Terms.</p>
 
-        <h2>13. Governing Law</h2>
+        <h2>15. Governing Law</h2>
         <p>These Terms shall be governed by and construed in accordance with the laws of the jurisdiction in which Relogue operates, without regard to its conflict of law provisions.</p>
 
-        <h2>14. Dispute Resolution</h2>
+        <h2>16. Dispute Resolution</h2>
         <p>Any disputes arising from these Terms or your use of the App shall be resolved through binding arbitration, except where prohibited by law. You agree to waive your right to participate in class action lawsuits or class-wide arbitration.</p>
 
-        <h2>15. Contact Information</h2>
+        <h2>17. Severability</h2>
+        <p>If any provision of these Terms is found to be unenforceable or invalid, that provision shall be limited or eliminated to the minimum extent necessary, and the remaining provisions shall remain in full force and effect.</p>
+
+        <h2>18. Contact Information</h2>
         <p>If you have any questions about these Terms of Service, please contact us at:</p>
         <p><strong>Email:</strong> <a href="mailto:support@relogue.app">support@relogue.app</a></p>
 
