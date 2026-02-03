@@ -108,30 +108,16 @@
             <li><strong>Apple ID Information:</strong> If you sign in with Apple, we receive your Apple ID identifier and, if you choose to share it, your email address. Apple may provide a private relay email address to protect your actual email.</li>
         </ul>
 
-        <h3>1.2 Device Information</h3>
-        <ul>
-            <li><strong>Device Identifier:</strong> We generate a random, anonymous device ID to associate your affirmations and usage data with your device. This ID cannot be used to identify you personally.</li>
-            <li><strong>Platform:</strong> We collect basic device information (iOS/Android) for compatibility purposes.</li>
-        </ul>
+        <h3>1.2 Device Identifier</h3>
+        <p>Relogue generates a persistent, anonymous device identifier stored securely on your device. This identifier is used solely for rate limiting, fraud prevention, analytics, and service integrity.</p>
+        <p>This identifier is not linked to real-world identity unless you choose to sign in using Apple Sign In.</p>
 
-        <h3>1.3 Usage and Engagement Data</h3>
-        <p>We collect usage data to improve our services and track your progress:</p>
-        <ul>
-            <li>Listening time (total seconds listened)</li>
-            <li>Daily streak and longest streak</li>
-            <li>Last active date</li>
-            <li>Total affirmations generated</li>
-            <li>Daily goal settings</li>
-        </ul>
+        <h3>1.3 Generated Content and Usage Data</h3>
+        <p>When you create an affirmation, we process the information you provide (such as selected intentions, questionnaire answers, and optional name usage) to generate personalized text and audio content.</p>
+        <p>The generated affirmation script, selected voice, processing duration, and anonymized technical metadata may be temporarily stored on our servers for quality assurance, abuse prevention, service reliability, and cost monitoring purposes.</p>
 
-        <h3>1.4 Affirmation Generation Data</h3>
-        <p>When you create an affirmation, we collect and store:</p>
-        <ul>
-            <li><strong>Intention:</strong> Your selected focus area (e.g., career, relationships, calm)</li>
-            <li><strong>Questionnaire Responses:</strong> Your answers to personalization questions</li>
-            <li><strong>Voice Selection:</strong> Your preferred voice for audio generation</li>
-            <li><strong>Generated Script:</strong> The AI-generated affirmation text (stored for content moderation and Apple App Store compliance)</li>
-        </ul>
+        <h3>1.4 Engagement and Listening Statistics</h3>
+        <p>We collect and store aggregated engagement data such as listening duration, daily usage streaks, goal completion, and affirmation counts. This information is associated with an anonymous device identifier and is used to provide app features (such as streak tracking), improve performance, and understand overall usage patterns.</p>
 
         <div class="highlight">
             <strong>Important:</strong> We do NOT collect sensitive personal data such as your location, contacts, photos, health data, or financial information.
@@ -151,7 +137,7 @@
             </tr>
             <tr>
                 <td>Device ID</td>
-                <td>Associate your data with your device; rate limiting</td>
+                <td>Rate limiting, fraud prevention, analytics, service integrity</td>
             </tr>
             <tr>
                 <td>Intention & Responses</td>
@@ -159,7 +145,7 @@
             </tr>
             <tr>
                 <td>Generated Scripts</td>
-                <td>Content moderation; Apple App Store compliance</td>
+                <td>Content moderation; quality assurance; Apple App Store compliance</td>
             </tr>
             <tr>
                 <td>Listening Time & Streaks</td>
@@ -171,14 +157,13 @@
             </tr>
         </table>
 
-        <h2>3. AI-Generated Content</h2>
-        <p>Relogue uses artificial intelligence to create personalized affirmation scripts. Here's what you should know:</p>
+        <h2>3. Third-Party AI Services</h2>
+        <p>To generate affirmation text and audio, Relogue securely transmits relevant user inputs to third-party AI and text-to-speech service providers. These providers process data only to generate the requested content and do not use it for advertising purposes.</p>
+        <p>Relogue does not sell personal data and does not allow third-party providers to use data for their own marketing purposes.</p>
+        <p>Specifically, we use:</p>
         <ul>
-            <li>Your questionnaire responses and preferences are sent to our secure AI processing service (Google Cloud Vertex AI).</li>
-            <li>If you enable name personalization, your first name is included in the AI prompt.</li>
-            <li>Generated affirmation scripts are stored on our servers for content moderation purposes, as required by Apple's App Store guidelines for AI-generated content.</li>
-            <li>AI-generated content is created fresh for each request and is unique to your selections.</li>
-            <li>Audio files are generated using Google Cloud Text-to-Speech and stored locally on your device.</li>
+            <li><strong>Google Cloud Vertex AI:</strong> For generating personalized affirmation scripts. Data is processed securely and subject to <a href="https://cloud.google.com/terms/cloud-privacy-notice" target="_blank">Google Cloud's Privacy Notice</a>.</li>
+            <li><strong>Google Cloud Text-to-Speech:</strong> For generating audio from affirmation scripts.</li>
         </ul>
 
         <h2>4. Data Storage and Security</h2>
@@ -207,10 +192,11 @@
         </ul>
 
         <h2>5. Data Retention</h2>
-        <p>We retain your data as follows:</p>
+        <p>Generated content, engagement data, and moderation logs are retained only for as long as necessary to provide the service, ensure safety, and comply with legal obligations. Data may be deleted or anonymized after a reasonable retention period.</p>
+        <p>Specifically:</p>
         <ul>
             <li><strong>Local Data:</strong> Stored on your device until you delete the app or clear app data.</li>
-            <li><strong>Generation Logs:</strong> Retained on our servers for content moderation and analytics purposes. You can request deletion at any time.</li>
+            <li><strong>Generation Logs:</strong> Retained on our servers for content moderation, quality assurance, and analytics purposes. You can request deletion at any time.</li>
             <li><strong>Engagement Data:</strong> Retained while you actively use the app. Automatically purged after 12 months of inactivity.</li>
             <li><strong>Account Data:</strong> Retained while your account is active. Deleted upon request.</li>
         </ul>
@@ -224,27 +210,28 @@
             <li><strong>Local Data:</strong> Delete affirmations individually in the app, or uninstall the app to remove all local data.</li>
         </ul>
 
-        <h2>7. Children's Privacy</h2>
+        <h2>7. Content Reporting</h2>
+        <p>Users may report generated content they believe to be inappropriate or concerning. Submitted reports, including the generated content and contextual metadata, are stored temporarily to allow review and improve content safety.</p>
+
+        <h2>8. Children's Privacy</h2>
         <p>Relogue is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If you believe we have collected information from a child under 13, please contact us immediately.</p>
 
-        <h2>8. Third-Party Services</h2>
-        <p>We use the following third-party services to provide our app:</p>
+        <h2>9. Other Third-Party Services</h2>
+        <p>In addition to AI services, we use the following third-party services:</p>
         <ul>
             <li><strong>Apple Sign In:</strong> For secure authentication (governed by <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's Privacy Policy</a>).</li>
-            <li><strong>Google Cloud Vertex AI:</strong> For generating personalized affirmation scripts. Data is processed securely and subject to <a href="https://cloud.google.com/terms/cloud-privacy-notice" target="_blank">Google Cloud's Privacy Notice</a>.</li>
-            <li><strong>Google Cloud Text-to-Speech:</strong> For generating audio from affirmation scripts.</li>
             <li><strong>Fly.io:</strong> For hosting our backend services (data stored in EU/US regions).</li>
             <li><strong>Apple App Store:</strong> For app distribution and subscription management.</li>
         </ul>
 
-        <h2>9. International Data Transfers</h2>
+        <h2>10. International Data Transfers</h2>
         <p>Your data may be processed in countries outside your country of residence, including the United States and European Union. We ensure appropriate safeguards are in place to protect your data in accordance with applicable laws.</p>
 
-        <h2>10. Changes to This Policy</h2>
+        <h2>11. Changes to This Policy</h2>
         <p>We may update this Privacy Policy from time to time. We will notify you of any material changes by updating the "Last Updated" date and, where appropriate, through in-app notifications. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
 
-        <h2>11. Contact Us</h2>
-        <p>If you have any questions, concerns, or requests regarding this Privacy Policy or your data, please contact us at:</p>
+        <h2>12. Contact</h2>
+        <p>For privacy questions or data requests, contact:</p>
         <p><strong>Email:</strong> <a href="mailto:support@relogue.app">support@relogue.app</a></p>
 
         <div class="highlight">
