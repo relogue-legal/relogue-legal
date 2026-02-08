@@ -104,7 +104,7 @@
         <h3>1.1 Personal Information</h3>
         <p>We collect minimal personal information to provide our services:</p>
         <ul>
-            <li><strong>First Name (Optional):</strong> If you choose to provide your name, it is used to personalize your affirmation experience. You can choose not to provide a name, or disable name personalization in Settings at any time. Your name is stored only on your device and is not transmitted to our servers.</li>
+            <li><strong>First Name (Optional):</strong> If you choose to provide your name, it is used to personalize your affirmation experience. You can choose not to provide a name, or disable name personalization in Settings at any time. Your name is stored locally on your device. If name personalization is enabled, your first name is transmitted to our server during affirmation generation so it can be included in the AI prompt. Your name is not stored on our servers after the generation request completes.</li>
         </ul>
 
         <h3>1.2 Device Information</h3>
@@ -165,7 +165,7 @@
             </tr>
             <tr>
                 <td>First Name</td>
-                <td>Personalize AI-generated affirmations (optional, stored on device only)</td>
+                <td>Personalize AI-generated affirmations (optional, stored on device; transmitted during generation but not stored on servers)</td>
             </tr>
             <tr>
                 <td>Device ID</td>
@@ -197,7 +197,7 @@
         <p>Relogue uses artificial intelligence to create personalized affirmation scripts. Here's what you should know:</p>
         <ul>
             <li>Your questionnaire responses and preferences are sent to our secure AI processing service (Google Cloud Vertex AI).</li>
-            <li>If you enable name personalization, your first name is included in the AI prompt. Your name is sent only during the generation request and is not stored on our servers.</li>
+            <li>If you enable name personalization, your first name is included in the AI prompt and transmitted to our server during the generation request. Your name is used only for that request and is not stored on our servers.</li>
             <li>Generated affirmation scripts are stored on our servers for abuse prevention and content moderation purposes, as required by Apple's App Store guidelines for AI-generated content.</li>
             <li>AI-generated content is created fresh for each request and is unique to your selections.</li>
             <li>Audio files are generated using Google Cloud Text-to-Speech and delivered to your device. Audio files are not stored on our servers.</li>
@@ -226,7 +226,7 @@
         <h3>4.3 Security Measures</h3>
         <ul>
             <li>All data transmission uses industry-standard encryption (HTTPS/TLS).</li>
-            <li>All API requests are authenticated using your anonymous device identifier.</li>
+            <li>We use device identifiers and other technical measures to secure API requests.</li>
             <li>Server data is stored in a secure cloud environment.</li>
             <li>We do not sell, rent, or share your personal information with third parties for marketing purposes.</li>
             <li>Access to server data is restricted to authorized personnel only.</li>
@@ -236,7 +236,7 @@
         <p>We retain your data as follows:</p>
         <ul>
             <li><strong>Local Data:</strong> Stored on your device until you delete individual affirmations, clear app data, or uninstall the App.</li>
-            <li><strong>Generation Logs:</strong> Retained on our servers indefinitely for abuse prevention, content moderation, and compliance purposes. You can request deletion at any time.</li>
+            <li><strong>Generation Logs:</strong> Retained for as long as necessary for safety, abuse prevention, content moderation, and legal compliance. You can request deletion at any time by contacting us.</li>
             <li><strong>Engagement Data:</strong> Retained while you actively use the app. Automatically purged after 12 months of inactivity.</li>
             <li><strong>Feedback Data:</strong> Retained for as long as necessary to address your enquiry and improve the App. You can request deletion at any time.</li>
             <li><strong>Device Data:</strong> Retained while your device is active. Deleted upon request.</li>
